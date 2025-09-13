@@ -1,0 +1,14 @@
+import { useState } from "react";
+
+export function App(){
+  //States = variável muda, tela também
+  const [message, setMessage] = useState('HOHOHO')
+  return(
+    <div>
+    <h1>{message}</h1>
+    <button onClick={() => {
+      setMessage('ERRADO! RAFA QUE É')
+    }}>VOCÊ ACHA QUE DANIEL É UM ANÃO?</button>
+    </div>
+  );
+}
